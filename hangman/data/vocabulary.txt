@@ -1,0 +1,7 @@
+Apple
+Microsoft
+Dell
+HP
+Oracle
+Linux
+ThinkPad
