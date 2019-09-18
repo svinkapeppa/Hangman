@@ -1,4 +1,5 @@
 """Hangman game"""
+import string
 from pathlib import Path
 from random import randint
 
@@ -38,6 +39,21 @@ class Game:
         :return:
         """
         print('\nGuess a letter:')
+
+    @staticmethod
+    def is_letter_valid(letter):
+        """
+        Checks for valid input
+        :param letter: character, typed by user
+        :return: True, if it's an english character; False otherwise
+        """
+        if letter == '':
+            return False
+        return letter.lower() in string.ascii_lowercase
+
+    @staticmethod
+    def warn():
+        print('Stop cheating! Write valid english letters!')
 
     def generate_word(self):
         """
@@ -108,8 +124,12 @@ class Game:
             if self.solved:
                 self.congratulate()
                 return
+
             self.greet()
             letter = input()
+            if not self.is_letter_valid(letter):
+                self.warn()
+                continue
 
             if self.is_missed(letter):
                 self.punish()
