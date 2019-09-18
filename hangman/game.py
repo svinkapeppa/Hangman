@@ -53,6 +53,10 @@ class Game:
 
     @staticmethod
     def warn():
+        """
+        Warns user, because he/she typed something bad
+        :return:
+        """
         print('Stop cheating! Write valid english letters!')
 
     def generate_word(self):

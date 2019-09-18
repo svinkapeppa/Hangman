@@ -17,7 +17,7 @@ All requirements are listed in [requirements.txt](requirements.txt). You can ins
 pip install -r requirements.txt
 ```
 
-**N.B.**: Don't forget to active your virtual environment!
+**N.B.**: Don't forget to activate your virtual environment!
 
 ## Usage
 
@@ -31,7 +31,7 @@ python -c "from hangman import Game; Game().play()"
 
 ### Tests
 
-Module test and linting are combined
+Module tests and linting are combined
 
 ```
 python -m pytest
