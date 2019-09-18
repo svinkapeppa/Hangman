@@ -1,8 +1,5 @@
+"""Tests"""
 from hangman.game import Game
-
-"""
-Tests
-"""
 
 
 def test_punish():

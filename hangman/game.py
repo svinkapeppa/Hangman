@@ -1,9 +1,6 @@
+"""Hangman game"""
 from pathlib import Path
 from random import randint
-
-"""
-Hangman game
-"""
 
 
 class Game:
