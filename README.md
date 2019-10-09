@@ -43,4 +43,4 @@ Feel free to make pull requests and open issues. In urgent situations you can wr
 
 ## License
 
-[MIT](LICENSE) 
+[MIT](LICENSE)
